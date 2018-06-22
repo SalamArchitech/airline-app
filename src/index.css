@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.delayed{
+	animation-duration: 400ms;
+	animation-name: blinkDelay;
+	animation-iteration-count: 8;
+	animation-direction: alternate;
+	color: red;
+}
+
+.changing{
+	animation-duration: 400ms;
+	animation-name: blinkChanging;
+	animation-iteration-count: 8;
+	animation-direction: alternate;
+}
+
+.changing-data{
+	animation-duration: 400ms;
+	animation-name: blinkChangingData;
+	animation-iteration-count: 8;
+	animation-direction: alternate;
+}
+
+/* Animation keyframes */
+@keyframes blinkDelay {
+	from {
+		background-color: #ff3232;
+		color: black;
+		/*background-color: #c9e4c9;*/
+	}
+	to {
+		background-color: white;
+		color: red;
+	}
+}
+
+@keyframes blinkChangingData {
+	from {
+		background-color: green;
+	}
+	to {
+		background-color: white;
+		
+	}
+}
+
+@keyframes blinkChanging {
+	from {
+		background-color: #D3D3D3;
+	}
+	to {
+		background-color: white;
+		
+	}
+}
